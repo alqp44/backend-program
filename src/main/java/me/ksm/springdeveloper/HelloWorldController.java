@@ -12,9 +12,16 @@ public class HelloWorldController {
         return "Hello World";
     }
 
+//    @GetMapping("/test")
+//    public String test() {
+//        return "Hello Everyone!";
+//    }
+
+
+
     @PostMapping("/test")
     public String postTest() {
-        return "Post Test respnse!";
+        return "Post Test response!";
     }
 
     @DeleteMapping("/test")
