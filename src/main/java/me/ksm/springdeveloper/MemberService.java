@@ -12,9 +12,9 @@ public class MemberService {
     private  MemberRepository memberRepository;
 
     //멤버 테이블에 있는 모든 레코드들을 읽어서 변환
-    @GetMapping("/Member")
+    @GetMapping
     public List<Member> getAllMembers() {
-        List<Member> result = memberRepository.findAll();
-        return result;
+        return memberRepository.findAll();
+
     }
 }
